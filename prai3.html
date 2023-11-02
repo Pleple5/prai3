@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let liczba = parseInt(prompt("Podaj liczbe:"));
+        document.write("wprowadzona liczba: ")
+        document.write("<br>");
+        let a = Math.floor(Math.random() * 100)
+        let b = Math.floor(Math.random() * 100)
+        
+        document.write("a=" + a);
+        document.write("<br>");
+        document.write("b=" + b);
+        document.write("<br>");
+
+        if (a == b) {
+            document.write("a jest rowne b wiec odleglosc jest taka sama");
+        }
+        else if ((Math.abs (a - liczba) > Math.abs (b - liczba))) {
+            document.write("b jest blizej");
+        } else {
+            document.write("a jest blizej");
+        }
+    </script>
+</body>
+</html>
